@@ -15,9 +15,6 @@ import javax.annotation.security.RolesAllowed;
 @RolesAllowed("ROLE_ANONYMOUS")
 public class SpringSecurityOauth2Application {
 
-
-
-
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {

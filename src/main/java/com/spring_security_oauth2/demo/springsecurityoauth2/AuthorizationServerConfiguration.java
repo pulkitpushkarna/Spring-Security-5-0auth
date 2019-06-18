@@ -18,18 +18,6 @@ import org.springframework.security.oauth2.provider.token.store.InMemoryTokenSto
 @EnableAuthorizationServer
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
 
-
-    @Configuration
-    public static class AuthenticationManagerProvider extends WebSecurityConfigurerAdapter {
-
-        @Bean
-        @Override
-        public AuthenticationManager authenticationManagerBean() throws Exception {
-            return super.authenticationManagerBean();
-        }
-
-    }
-
     @Autowired
     PasswordEncoder passwordEncoder;
 
